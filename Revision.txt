@@ -1,0 +1,16 @@
+driver.manage().timeouts().implicitlywait(5 ,timeunits.seconds)
+Webdriverwait wait = new Webdriverwait(driver ,5)
+wait.until(Expectedconditions.visibilityofelements(Located By))
+FluentWait wait = new FluentWait(driver)
+wait.withtimeout(durations.ofseconds).pollingevery(Durations.ofseconds).ignoring(Nosuchexception.class)
+manage().switchto().alert().accept();
+Actions a = new Actions(driver)
+a.moveToelement(Webelelement).doubleclick().perform();
+Set<string> wh =driver.getwindowhandles();
+Iterator<String> it = new Iterator<String>();
+it.next();
+
+FileInputStream fs = new FileInputStream("Filepath");
+HSSFWorkBook wb = new HSSFWorkBook(fs);
+HSSFSheet hs = wb.getSheet("Sheet");
+
